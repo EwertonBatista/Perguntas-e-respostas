@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs')%>
+<body>
+    <%- include('partials/navbar.ejs')%>
+
+    <h1 style="text-align:center">Crie um usuario</h1>
+            <form method="post" action="/criarlogin">
+    <br><br><br>
+
+        <div class="container">
+
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Endereço de email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="emaillogin">
+                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+              </div>
+
+
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senhalogin">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Criar usuario</button>
+            </form>
+
+
+        </div>
+</body>
+<%- include('partials/footer.ejs')%>
